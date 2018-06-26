@@ -53,6 +53,12 @@
 
 #for i in range (1,101):
 #    if (i%2==0):
+
 #        print(i)
 #    else:
 #        i= i+1
+a =[10,20,30]
+a.append(40)
+print(a)
+a.insert(2,5)
+print(a)
