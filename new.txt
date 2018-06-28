@@ -1,7 +1,0 @@
-pm ='mr modi'
-print('the prime minister of india is {}'.format(pm))
-A=10
-print('I have {}days' .format (A))
-B = 3.6
-print('my rating is {:.2f}'.format(B))
-print('pm modi is {} mr modi he ha has {} dogs and rating {:.2f} '.format(pm,A,B))

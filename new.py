@@ -22,11 +22,7 @@ def start_chat(spy_name,spy_age,spy_rating):
                 print("your current status is %s" %current_status_msg)
                 #status update module
             elif menu_choice == 2:
-                print("add friend")
-                add_your_friend = add_friend()
-                print("YOUR FRIEND %s IS SUSSULLY APPEND"%friend_name[len(friend_name)-1])
-                print("YOU HAVE %d FRIEND NOW"%add_your_friend)
-                            #add a new meesage
+                print("add friend")             #add a new meesage
 #add a new meesage
             elif menu_choice ==3:
                 print("Send a secrate message")
@@ -77,32 +73,10 @@ def add_status(current_status_msg):
         else:
             print("invalid entry\ntry again")
     return updated_status
-def add_friend():
-    new_name = input("enter a friend name:")
-    new_satation = input ("what should are call your friend(mr./miss.)?")
-    new_name = new_satation + ""+new_name
-    new_age = int(input("Enter your friend age"))
-    new_rating = float(input("Enter your friend rting?"))
-
-
-    if len(new_name) > 0 and new_age > 12 and new_age < 60:
-        friend_name.append(new_name)
-        friend_age.append(new_age)
-        friend_rating.append(new_rating)
-        friend_online.append(True)
-    else:
-        print("sorry! your friend does not must one invalid to be spy user")
-    return len(friend_name)
-
-
     #===========================main fn start_chat==============================
 Question = "welcome to spychat /n are you an default user (y/n)?"                #asking a question from a user side
 choice = input(Question)
 STATUS_MESSAGE = [" Busy","Can't talk","Gym"]                                    #history previous status list
-friend_name = []
-friend_age = []
-friend_rating = []
-friend_online = []
 if choice == "Y" or choice =="y":
     start_chat(spy_name,spy_age,spy_rating)
                                                                                  #status udate statement
